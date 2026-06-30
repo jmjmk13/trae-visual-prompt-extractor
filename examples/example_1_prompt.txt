@@ -1,0 +1,46 @@
+# 示例1：动漫风格人物
+
+## 原图描述
+- 动漫女孩，纯白色光泽长发编成粗辫子
+- 异色瞳：左眼紫罗兰紫色带粉色反光，右眼祖母绿带金色反光
+- 手持日本武士刀水平横过下半脸
+- 黑色丝绸和服配金色花卉刺绣
+- 鲜红色彼岸花装饰
+- 左上方向光源，柔和高光，微妙阴影
+- 刀身镜面反射花朵和头发
+- 深色神秘背景
+
+## 生成提示词
+
+### Midjourney 一键生成
+```
+portrait of anime girl with pure white glossy hair in thick braids, heterochromatic eyes left purple with pink reflection right green with golden reflection, holding Japanese katana horizontally across lower face, black silk kimono with gold floral embroidery, bright red spider lilies, top-left lighting soft highlights subtle shadows, mirror-like reflection on sword, dark moody background, digital painting realistic rendering, masterpiece ultra detailed --ar 3:4 --v 6 --q 2 --style raw
+```
+
+### 标准提示词
+```
+动漫女孩，纯白色光泽长发编成粗辫子，异色瞳（左眼紫罗兰紫色带粉色反光，右眼祖母绿带金色反光），手持日本武士刀水平横过下半脸，黑色丝绸和服配金色花卉刺绣，鲜红色彼岸花装饰，左上方向光源，柔和高光，微妙阴影，刀身镜面反射花朵和头发，深色神秘背景，写实数字绘画风格，杰作，超详细，8K
+```
+
+### 负面提示词
+```
+低质量，最差质量，糟糕的人体结构，比例失调，多余肢体，缺失肢体，融合肢体，漂浮肢体，断开的肢体，畸形的手，多余手指，缺少手指，额外数字，更少数字，模糊，文字，水印，签名，logo，裁剪不当，超出画面，草稿，草图，未完成，低分辨率，JPEG伪影，用户名，错误，变异，变形，丑陋，毁容，死亡，恐怖，血腥，暴力，照片写实，3D渲染，CG，糟糕的艺术，业余，平面色彩，饱和度低，灰色头发，暗淡的眼睛，无反射，哑光刀身，硬阴影，过曝，欠曝，卡通风格，Q版
+```
+
+### 关键词
+```
+纯白色光泽长发，粗辫子，异色瞳，紫色眼睛，绿色眼睛，日本武士刀，黑色丝绸和服，金色花卉刺绣，红色彼岸花，左上光源，柔和高光，微妙阴影，镜面反射，深色神秘背景，数字绘画，写实渲染
+```
+
+### 风格标签
+```
+数字绘画，写实动漫风格，柔和定向光源，反射表面，日本美学，深色神秘氛围，超详细质感
+```
+
+## 生成技巧
+1. 使用"anime style digital painting"作为基础风格
+2. 强调"pure white glossy hair"而非gray hair
+3. 精确描述眼睛颜色和反光
+4. 指定光源方向和柔和光影
+5. 添加材质描述（丝绸、镜面反射）
+6. 使用高质量标签（masterpiece, ultra detailed, 8K）
