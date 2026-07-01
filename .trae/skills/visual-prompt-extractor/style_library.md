@@ -67,9 +67,9 @@
 - **清透高调二次元逆光** (airy high-key anime backlight): 日系二次元插画、过曝白背景、纯白发光边缘、淡青蓝阴影、奶油肤色、轻薄平面色块、柔和渐变。适合白发少女特写、夏日逆光、清透空气感画面。提示重点：anime illustration, cel-shaded anime rendering, clean delicate linework, flat color planes with soft gradients, simplified anime facial features。负向边界：photorealistic, BJD doll, 3D render, CGI, plastic skin, glossy lips, photographic hair strands, visible pores。
 - **选择性彩色景观嵌入** (selective color landscape embedding): 主体大部分保持灰阶或低饱和，只让眼睛、透明器皿、指甲、手掌等局部承载高饱和风景图像。适合“眼中有天空/海洋/夕阳”“玻璃瓶里装着天空”“半透明手掌映出海天相接”等超现实二次元特写。提示重点：grayscale anime character, selective color, embedded landscape, translucent material, glowing reflection, ocean horizon inside the eye or palm。负向边界：full-color character, colorful skin, random colorful background, ordinary glowing eyes, opaque hand, realistic photo, messy reflections。
 
-### VSC稀有风格词库融合索引
+### 稀有亚种风格词库融合索引
 
-完整词库来自 `vibeshotclub/vsc-skills`，已收录到 `references/vsc_style_library.json`，共 620 条。反推图片提示词时，先用本文件确定基础风格，再用 VSC 词库补足更细的“亚种风格/媒介/材质/缺陷/版式/空间/造型”。
+完整稀有亚种词库已收录到 `references/rare_style_library.json`，共 620 条。反推图片提示词时，先用本文件确定基础风格，再用稀有亚种词库补足更细的“亚种风格/媒介/材质/缺陷/版式/空间/造型”。
 
 | 类别 | 数量 | 适合反推的视觉证据 |
 |------|------|--------------------|
@@ -84,7 +84,7 @@
 | 时装、亚文化与人物造型 | 54 | 妆造、服饰年代、街头亚文化、配饰、发型、编辑大片 |
 | 建筑、空间与场景气质 | 54 | 室内空间、建筑年代、展厅、街景、舞台、具体场景氛围 |
 
-使用原则：VSC词库不是用来堆词的，而是用来把“好像很特别但说不上来”的视觉质地命名。每张图最多采用 1 个主风格、0-1 个材质、0-1 个光色/版式、0-1 个缺陷层、0-1 个造型词，并同步加入对应的防跑偏约束。
+使用原则：稀有亚种词库不是用来堆词的，而是用来把“好像很特别但说不上来”的视觉质地命名。每张图最多采用 1 个主风格、0-1 个材质、0-1 个光色/版式、0-1 个缺陷层、0-1 个造型词，并同步加入对应的防跑偏约束。
 
 ---
 

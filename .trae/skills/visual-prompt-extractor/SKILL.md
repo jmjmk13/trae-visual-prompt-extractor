@@ -7,7 +7,7 @@ description: Use when Codex needs to analyze uploaded images or videos, reverse-
 
 本skill用于分析上传的图片或视频，也用于把用户的文字想法结构化成可生成的AI绘画提示词，并能复盘生成结果与目标之间的差距。通过内置的海量风格词库和画面锚点流程，确保提示词既专业、精准，又适合小白直接复制使用。
 
-本skill已经融合 `vibeshotclub/vsc-skills` 中的稀有风格词库与新东方神怪水墨语法。使用时不要把它当成随机风格生成器；它的目标是先准确拆解用户图片，再用更细的风格词解释“这张图像哪里像、该怎么写进提示词”。
+本skill已经内置稀有亚种风格词库与新东方神怪水墨语法。使用时不要把它当成随机风格生成器；它的目标是先准确拆解用户图片，再用更细的风格词解释“这张图像哪里像、该怎么写进提示词”。
 
 ## 何时调用
 
@@ -219,7 +219,7 @@ description: Use when Codex needs to analyze uploaded images or videos, reverse-
 
 ### 8. 参考风格词库
 
-分析时必须先查阅 `style_library.md` 获取基础术语；当画面有非泛化审美、罕见媒介、特殊材质、影像缺陷、亚文化造型、海报/产品/空间风格时，再查阅 `references/vsc_style_library.json` 精确匹配 VSC 稀有风格词。
+分析时必须先查阅 `style_library.md` 获取基础术语；当画面有非泛化审美、罕见媒介、特殊材质、影像缺陷、亚文化造型、海报/产品/空间风格时，再查阅 `references/rare_style_library.json` 精确匹配稀有亚种风格词。
 
 **艺术风格匹配**:
 - 如果图片显示柔和笔触和光影强调 → "印象派，莫奈风格"
@@ -242,14 +242,14 @@ description: Use when Codex needs to analyze uploaded images or videos, reverse-
 - 奇幻风格带魔法世界 → "宫崎骏风格"
 - 未来感镀铬机器人 → "空山基风格"
 
-**VSC 稀有风格匹配**:
-- `references/vsc_style_library.json` 含 620 条风格词，字段包括 `中文风格名`、`English prompt tokens`、`类别`、`视觉DNA / 关键词`、`材质/色彩/光线`、`容易翻车`、`补救提示`。
+**稀有亚种风格匹配**:
+- `references/rare_style_library.json` 含 620 条风格词，字段包括 `中文风格名`、`English prompt tokens`、`类别`、`视觉DNA / 关键词`、`材质/色彩/光线`、`容易翻车`、`补救提示`。
 - 匹配时必须用视觉证据反推，不要因为词好看就加入。证据可以来自材质、色彩、镜头年代感、印刷缺陷、角色服装、空间气质、媒介工艺。
 - 每次最多选择 1 个强主风格、0-1 个材质/表面、0-1 个光色或版式、0-1 个影像缺陷、0-1 个人物造型。过多强风格会让生成图摇摆。
 - 如果风格词会威胁主体识别，必须吸收该条目的 `补救提示`，例如 `clear silhouette`、`recognizable subject`、`material only on surface`、`controlled grain`。
 - 输出时给出 2-4 个候选风格及证据，最后只把最匹配的少量词写进直接复制提示词。
 
-**VSC 七层组合语法**:
+**七层组合语法**:
 | 层级 | 数量 | 作用 | 反推时怎么用 |
 |------|------|------|--------------|
 | Base 主风格 | 1 | 决定画面大方向 | 只选一个，如电影、动画、摄影、工艺或数字媒介 |
@@ -298,7 +298,7 @@ description: Use when Codex needs to analyze uploaded images or videos, reverse-
 ### 🎭 风格标签
 [风格描述符]
 
-### 🧬 VSC稀有风格匹配
+### 🧬 稀有亚种风格匹配
 - 候选1: [中文风格名 / English prompt tokens] - 证据: [图中可见材质、光色、媒介、版式或造型]
 - 候选2: [...]
 - 最终采用: [进入提示词的少量风格锚点]
