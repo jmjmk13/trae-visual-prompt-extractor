@@ -1,0 +1,4 @@
+interface:
+  display_name: "视觉提示词提取器"
+  short_description: "分析图片风格、反推生图提示词，并用稀有风格词补强细节。"
+  default_prompt: "用$visual-prompt-extractor分析这张图，提取可直接复制的AI绘画提示词。"
