@@ -1,6 +1,6 @@
 # AI绘画提示词提取器 Skill
 
-一个用于分析图片/视频、结构化文字想法、复盘生成结果并生成精准AI绘画提示词的 Trae CN Skill。内置基础风格词库，并融合 `vibeshotclub/vsc-skills` 的 620 条稀有亚种风格词，支持从构图、光影、材质、媒介、版式、空间和人物造型等维度反推出更准确的生图提示词，让小白也能拿到可直接复制使用的结果。
+一个用于分析图片/视频、结构化文字想法、复盘生成结果并生成精准AI绘画提示词的 Agent Skill。内置基础风格词库，并融合 `vibeshotclub/vsc-skills` 的 620 条稀有亚种风格词，支持从构图、光影、材质、媒介、版式、空间和人物造型等维度反推出更准确的生图提示词，让小白也能拿到可直接复制使用的结果。
 
 ## ✨ 功能特性
 
@@ -42,9 +42,9 @@ trae-visual-prompt-extractor/
 
 ### 方法1：手动安装
 
-1. 将 `.trae/skills/visual-prompt-extractor/` 文件夹复制到你的 Trae CN skills 目录
+1. 将 `.trae/skills/visual-prompt-extractor/` 文件夹复制到你的 agent skills 目录
 
-2. 重启 Trae CN 或刷新技能列表
+2. 重启对应 agent 或刷新技能列表
 
 3. 在对话中上传图片或视频，AI会自动调用此skill进行分析
 
@@ -60,7 +60,7 @@ cp -r .trae/skills/visual-prompt-extractor ~/.trae/skills/
 
 ### 基本用法
 
-在 Trae CN 对话中：
+在 agent 对话中：
 
 1. **上传图片**：直接拖入图片文件
 2. **上传视频**：直接拖入视频文件

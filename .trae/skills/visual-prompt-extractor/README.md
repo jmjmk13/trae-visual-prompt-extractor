@@ -2,7 +2,7 @@
 
 ## 简介
 
-这是一个用于精准分析图片/视频、结构化文字想法、复盘生成结果并生成AI绘画提示词的Trae CN Skill。它在基础风格词库之外融合了 `vibeshotclub/vsc-skills` 的稀有风格词，用来识别材质、媒介缺陷、亚文化造型、版式、空间和特殊影像气质，并帮助小白拿到可直接复制使用的提示词。
+这是一个用于精准分析图片/视频、结构化文字想法、复盘生成结果并生成AI绘画提示词的 Agent Skill。它在基础风格词库之外融合了 `vibeshotclub/vsc-skills` 的稀有风格词，用来识别材质、媒介缺陷、亚文化造型、版式、空间和特殊影像气质，并帮助小白拿到可直接复制使用的提示词。
 
 ## 功能特性
 
@@ -18,9 +18,9 @@
 
 ## 如何使用
 
-### 在Trae CN中使用
+### 在agent中使用
 
-1. 将此skill文件夹复制到你的Trae CN skills目录：
+1. 将此skill文件夹复制到你的 agent skills 目录：
    ```
    .trae/skills/visual-prompt-extractor/
    ```
@@ -55,7 +55,7 @@
 将 `.trae/skills/visual-prompt-extractor/` 整个文件夹打包发送给其他人，他们只需：
 
 1. 解压到自己的 `.trae/skills/` 目录
-2. 重启Trae CN或刷新
+2. 重启对应 agent 或刷新技能列表
 3. 即可使用
 
 #### 方法2：上传到GitHub
@@ -64,9 +64,9 @@
 2. 上传skill文件夹内容
 3. 其他用户克隆到本地 `.trae/skills/` 目录即可使用
 
-#### 方法3：作为Trae CN官方skill提交
+#### 方法3：作为公开skill提交
 
-联系Trae CN官方团队，提交skill审核，审核通过后可成为官方内置skill。
+提交到目标 agent 或插件市场的官方审核渠道，审核通过后可成为公开可安装的skill。
 
 ## 文件结构
 
@@ -177,4 +177,4 @@ visual-prompt-extractor/
 
 ## 作者
 
-Created for Trae CN users
+Created for agent users
